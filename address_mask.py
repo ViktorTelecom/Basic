@@ -1,4 +1,4 @@
-#!/home/vagrant/venv/pyneng-py3/bin/python3
+#!/usr/bin/env python
 
 #Input CIDR
 strNetworkAddressMask = input('Network Input: ')
