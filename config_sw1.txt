@@ -31,6 +31,9 @@ interface Ethernet0/1
  spanning-tree portfast edge trunk
 !
 interface Ethernet0/2
+ switchport access vlan 50
+ duplex auto
+ switchport mode access
  duplex auto
 !         
 interface Ethernet0/3
@@ -47,9 +50,15 @@ interface Ethernet1/1
  duplex auto
 !
 interface Ethernet1/2
+ switchport access vlan 50
+ duplex auto
+ switchport mode access
  duplex auto
 !
 interface Ethernet1/3
+ switchport access vlan 20
+ duplex auto
+ switchport mode access
  duplex auto
 !
 interface Vlan100
