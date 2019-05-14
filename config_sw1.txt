@@ -21,6 +21,7 @@ hostname sw1
 !
 !
 interface Ethernet0/0
+ switchport mode access
  duplex auto
 !
 interface Ethernet0/1
@@ -44,6 +45,7 @@ interface Ethernet0/3
  spanning-tree portfast edge trunk
 !         
 interface Ethernet1/0
+ switchport mode access
  duplex auto
 !
 interface Ethernet1/1
