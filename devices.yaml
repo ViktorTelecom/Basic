@@ -1,0 +1,16 @@
+routers:
+- device_type: cisco_ios
+  ip: 172.16.10.254
+  username: kpx
+  password: Dtthyfz604
+  secret: cisco
+- device_type: cisco_ios
+  ip: 172.16.10.241
+  username: kpx
+  password: Dtthyfz604
+  secret: cisco
+- device_type: cisco_ios
+  ip: 172.16.10.174
+  username: kpx
+  password: Dtthyfz604
+  secret: cisco
