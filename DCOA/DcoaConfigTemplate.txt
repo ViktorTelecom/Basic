@@ -1,0 +1,13 @@
+hostname {{hostname}}
+#
+interface TengigabitEthernet1/0/1
+ ip address {{ce_addr}}
+  security-zone WAN
+ exit
+# 
+bridge 1
+ ip address {{local_addr}}
+ security-zone LAN
+ enable
+# 
+ip route 0.0.0.0/0 {{pe_addr}}

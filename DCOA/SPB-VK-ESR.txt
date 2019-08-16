@@ -1,0 +1,13 @@
+hostname SPB-VK-ESR
+#
+interface TengigabitEthernet1/0/1
+ ip address 2.2.2.1
+  security-zone WAN
+ exit
+# 
+bridge 1
+ ip address 10.1.2.254
+ security-zone LAN
+ enable
+# 
+ip route 0.0.0.0/0 2.2.2.2

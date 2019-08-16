@@ -1,0 +1,13 @@
+hostname SPB-MF-ESR
+#
+interface TengigabitEthernet1/0/1
+ ip address 3.3.3.1
+  security-zone WAN
+ exit
+# 
+bridge 1
+ ip address 10.1.3.254
+ security-zone LAN
+ enable
+# 
+ip route 0.0.0.0/0 3.3.3.2
